@@ -1,0 +1,37 @@
+body{
+    background-image: url("penguin.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin:0px;
+}
+p{
+    color: aliceblue;
+}
+#box3{
+    width: 150px;
+    height:150px;
+    background: red;
+    border-radius: 10px;
+    font-size:125px;
+    text-align: center;
+
+    animation:10s linear 0s infinite running myAnimation;
+}
+@keyframes myAnimation{
+    /*slide*/
+    from{margin-left:0%;}
+    to{margin-left:100%;}
+    /*rotate*/
+    100%{transform: rotateZ(360deg)}
+    /*zoomIn and zoomOut*/
+    /*50%{transform: scale(0.5, 0.5)}*/
+    /*color changing*/
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+
+}
